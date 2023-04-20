@@ -1,0 +1,95 @@
+.MyTitle {
+    background-color: rgba(71, 227, 255, 0.347);
+    color: black ;
+    padding: 10px;
+    border: 2px solid black;
+    margin: 20px;
+    text-align: center;
+  }
+
+  /* Divs with class 'set' */
+  .set {
+  background-color: rgba(255, 192, 203, 0.74);;
+  border: 1px solid black;
+  margin: 20px;
+  padding: 10px;
+  margin-bottom: 10px;
+  text-align: center; /* Align content to center */
+  }
+
+   /* Step 2 - List items */
+  li {
+    width: 100px;
+    height: 30px;
+    background-color: rgba(221, 160, 221, 0.616);
+    border: 1px solid black;
+    margin: 5px;
+    padding: 5px;
+   }
+
+   /* Step 2 - Unordered lists */
+   ul {
+    list-style-type: none;
+   }
+
+   /* Step 3 - Add hover effect */
+   li:hover{
+    background-color: palevioletred;
+  } 
+
+  .MyFoot {
+    background-color: rgba(128, 0, 128, 0.557);
+    color: black;
+    border: 2px solid black;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  /* Step 4 */
+
+/* Wide screen (desktop) */
+@media screen and (min-width: 992px) {
+  body {
+      text-align: center; /* Align divs to center */
+  }
+  .set {
+      display: inline-block;
+      vertical-align: top;
+      width: calc(21% - 20px);
+  }
+}
+
+/* Medium screen (tablet) */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .set {
+      display: inline-block;
+      vertical-align: top;
+      width: calc(50% - 20px);
+      box-sizing: border-box;
+  }
+
+  /* Clear floats after every second div to make sure the next div starts on a new line */
+  .set:nth-child(2n)::after {
+      content: '';
+      display: table;
+      clear: both;
+  }
+}
+
+/* Small screen (mobile) */
+@media screen and (max-width: 767px) {
+  .set {
+      display: block;
+      width: 80%;
+  }
+}
+
+
+
+
+  
+
+
+
+
